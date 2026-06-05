@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chiranjivi — Cloud & DevOps Portfolio</title>
+ 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+ 
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+ 
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+ 
+  <!-- Navigation -->
+  <header class="nav" id="top">
+    <div class="brand">Chiranjivi<span class="dot">.</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-toggle" id="menuBtn" aria-label="Menu">
+      <i class="fa fa-bars"></i>
+    </button>
+  </header>
+ 
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-label"><i class="fa-solid fa-cloud"></i> Cloud & DevOps Engineer</p>
+      <h1>Hi, I'm<br><span class="highlight">Chiranjivi</span></h1>
+      <p class="hero-sub">I build cloud-native applications and deploy them reliably.<br>AWS · Docker · CI/CD · Terraform</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#projects"><i class="fa-solid fa-rocket"></i> View Projects</a>
+        <a class="btn btn-outline" href="#contact">Get In Touch</a>
+      </div>
+      <div class="hero-badges">
+        <span><i class="fa-brands fa-aws"></i> AWS</span>
+        <span><i class="fa-brands fa-docker"></i> Docker</span>
+        <span><i class="fa-solid fa-code-branch"></i> CI/CD</span>
+        <span><i class="fa-solid fa-server"></i> Linux</span>
+      </div>
+    </div>
+    <div class="scroll-hint"><i class="fa fa-chevron-down"></i></div>
+  </section>
+ 
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <p class="section-label">Who I Am</p>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a Cloud & DevOps enthusiast passionate about building scalable infrastructure and automating deployments. Currently learning and building with AWS, Docker, and modern DevOps tooling.</p>
+          <p>I love turning ideas into reliable, production-ready systems — from a simple S3-hosted site to containerised microservices with full CI/CD pipelines.</p>
+        </div>
+        <div class="skills-list">
+          <div class="skill-item"><i class="fa-brands fa-aws"></i><span>AWS (S3, EC2, CloudFront, IAM)</span></div>
+          <div class="skill-item"><i class="fa-brands fa-docker"></i><span>Docker & Containers</span></div>
+          <div class="skill-item"><i class="fa-solid fa-code-branch"></i><span>Git & GitHub Actions</span></div>
+          <div class="skill-item"><i class="fa-solid fa-terminal"></i><span>Bash & Linux</span></div>
+          <div class="skill-item"><i class="fa-solid fa-layer-group"></i><span>Terraform (IaC)</span></div>
+          <div class="skill-item"><i class="fa-solid fa-shield-halved"></i><span>HTTPS & Security</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <p class="section-label">What I've Built</p>
+      <h2 class="section-title">Projects</h2>
+      <div class="cards">
+ 
+        <article class="card">
+          <div class="card-icon"><i class="fa-brands fa-aws"></i></div>
+          <div class="card-tag">Cloud Hosting</div>
+          <h3>Static Portfolio on AWS S3 + CloudFront</h3>
+          <p>Built and deployed this portfolio on Amazon S3 with CloudFront CDN for HTTPS delivery and global caching. Configured IAM bucket policies and custom CloudFront distribution.</p>
+          <div class="card-tech">
+            <span>S3</span><span>CloudFront</span><span>IAM</span><span>HTTPS</span>
+          </div>
+          <a href="#" class="card-link"><i class="fa-brands fa-github"></i> View on GitHub</a>
+        </article>
+ 
+        <article class="card">
+          <div class="card-icon"><i class="fa-brands fa-docker"></i></div>
+          <div class="card-tag">Containerisation</div>
+          <h3>Dockerised Node.js App with CI/CD</h3>
+          <p>Containerised a Node.js REST API using Docker, set up a GitHub Actions pipeline for automated testing and deployment to a cloud server on every push to main.</p>
+          <div class="card-tech">
+            <span>Docker</span><span>GitHub Actions</span><span>Node.js</span><span>CI/CD</span>
+          </div>
+          <a href="#" class="card-link"><i class="fa-brands fa-github"></i> View on GitHub</a>
+        </article>
+ 
+        <article class="card">
+          <div class="card-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <div class="card-tag">Infrastructure as Code</div>
+          <h3>AWS Infrastructure with Terraform</h3>
+          <p>Provisioned a full AWS environment (VPC, EC2, S3, security groups) using Terraform. Managed state remotely with S3 backend and DynamoDB locking.</p>
+          <div class="card-tech">
+            <span>Terraform</span><span>AWS VPC</span><span>EC2</span><span>S3 Backend</span>
+          </div>
+          <a href="#" class="card-link"><i class="fa-brands fa-github"></i> View on GitHub</a>
+        </article>
+ 
+      </div>
+    </div>
+  </section>
+ 
+  <!-- Contact / Footer -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <p class="section-label">Let's Talk</p>
+      <h2 class="footer-title">Get In Touch</h2>
+      <p class="footer-sub">Open to internship opportunities, collaborations, and cloud projects.</p>
+      <div class="footer-links">
+        <a href="mailto:chiranjivimarghaed@gmail.com"><i class="fa fa-envelope"></i> chiranjivimarghaed@gmail.com</a>
+        <a href="https://github.com/chiranjivi13" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="www.linkedin.com/in/chiranjivimarghade-5a0801292"_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+      </div>
+      <p class="footer-copy">© 2025 Your Name · Hosted on AWS S3 + CloudFront</p>
+    </div>
+  </footer>
+ 
+  <script>
+    // Mobile nav toggle
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.querySelector('.nav nav').classList.toggle('open');
+    });
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.card, .skill-item, .about-text p').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
